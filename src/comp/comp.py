@@ -36,13 +36,15 @@ print(b)
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# import string
-# print("Starts between C and G, inclusive:")
+import string
+print("Starts between C and G, inclusive:")
 # c = [person.name for person in humans if person.name[0].lower() == letter for letter in string.ascii_lowercase[2:7]]
-# letters = [chr(letter) for letter in range(ord(string.ascii_lowercase[2:7].split()))]
-# c = [person.name for person in humans if person.name[0].lower() == letters.lower() ]
+c_g = string.ascii_lowercase[2:7]
+letter1 = [ord(letter) for letter in c_g]
+# letters = [chr(letter) for letter in range(ord(string.ascii_lowercase[2:7]))]
+# c = [person.name for person in humans if ord(person.name[0]) in range(letter1) ]
 # print(c)
-# print(string.ascii_lowercase[2:7])
+print(letter1)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
