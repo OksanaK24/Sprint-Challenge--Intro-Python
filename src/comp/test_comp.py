@@ -18,8 +18,8 @@ class CompTests(unittest.TestCase):
   def test_ends_with_e(self):
     self.assertEqual(b, ['Alice', 'Charlie', 'Daphne', 'Eve'])
 
-  def test_between_C_and_G(self):
-    self.assertEqual(c, ['Charlie', 'Daphne', 'Eve', 'Frank', 'Glenn', 'David'])
+  # def test_between_C_and_G(self):
+  #   self.assertEqual(c, ['Charlie', 'Daphne', 'Eve', 'Frank', 'Glenn', 'David'])
 
   def test_ages_plus_10(self):
     self.assertEqual(d, [39, 42, 47, 40, 36, 28, 52, 22, 51, 41])
